@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- Riferimenti WinJS -->
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+    <script src="../../js/jquery-2.2.0.js"></script>
+    <script src="../../js/html2canvas_old.js"></script>
+    <script src="../../sounds/sounds.js"></script>
+</head>
+<body>
+    <!-- Contenuto che verrà caricato e visualizzato. -->
+    <div class="fragment homepage">
+        <!--<header aria-label="Header content" role="banner">
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">EggMe</span>
+            </h1>
+        </header>-->
+        <section aria-label="Main content" role="main" id="eggme">
+            <table style="position: absolute; top: 10px; left: 0px; width: 100vw;">
+                <tr>
+                    <td style="text-align: center; width: 33vw;"><img src="../../immagini/latest.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMais" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                    <td style="text-align: center; width: 34vw;"><img src="../../immagini/latestSilver.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMaisSilver" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                    <td style="text-align: center; width: 33vw;"><img src="../../immagini/latestGold.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMaisGold" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                </tr>
+            </table>
+
+            <table style="position: absolute; width: 100%; height: 100%; bottom: 15vh; left: 0px;">
+                <tr>
+                    <td style="text-align: center;" id="imgs">
+                        <img src="../../immagini/egg-32865_960_720.png" id="uovo" style="position: relative; top: 70vh; height: 70vh; width: auto; z-index: 0;" />
+                        <img id="crack" style="position: relative; left: 0px; height: 70vh; width: auto; z-index: 2;" />
+                    </td>
+                </tr>
+            </table>
+
+            <div style="position: absolute; top: 0px; left: 0px; z-index: 5; width: 100vw; height: 100vh;" id="vittoria">
+                <div style="position: absolute; top: 15vh; left: 8vw; z-index: 6; background-color: #1d1d1d;">
+                    <table style="width: 80vw; margin: 1vw;">
+                        <tr>
+                            <td style="text-align: center; font-size: 20pt; font-weight: bold;">YOU WON!</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img id="premio" src="" style="width: 35vw; height: auto;" /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; font-size: 15pt"><span id="nomePremio"></span></td>
+                        </tr>
+                        <tr>
+                            <td><hr /></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center; font-size: 15pt">Keep playing to win more medals and collect them all!</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><button id="play">Keep playing</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <table style="position: absolute; bottom: 0px; left: 0px; width: 100%;">
+                <tr>
+                    <td style="text-align: center; margin-bottom: 10px;"><span id="contatore" style="font-size: 25pt;"></span></td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">
+                        <div id="progress" style="position: absolute; left: 0px; height: 5px; background-color: lightgreen;"></div>
+                    </td>
+                </tr>
+            </table>
+
+            <button id="tapUovo" style="position: absolute; top: 0vh; left: 0vw; border: none; background-color: transparent; height: 100%; width: 100%; z-index: 4;"></button>
+        
+        </section>
+        <div id="previewImage" style="position: absolute; left: 0px; top: 0px;"></div>
+
+        <div id="name" style="position: absolute; left: 0px; right: 0px; height: 100vh; width: 100vw; background-color: rgba(0,0,0,.9); z-index: 8;" align="center" hidden>
+            <table>
+                <tr>
+                    <td colspan="2" style="height: 40vh;">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2" style="font-size: 15pt;">
+                        INSERT YOUR NAME
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <input type="text" id="namePlayer" style="width: 45vw;" />
+                    </td>
+                    <td align="center">
+                        <input type="button" id="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar" style="background-color: rgba(0,0,0,.8)">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'global', label:'Barn', icon:'read'}" type="button" id="barn"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'global', label:'Bank', icon:'shop'}" type="button" id="shop"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'selection', label:'Trophies', icon:'flag'}" type="button" id="medals"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'selection', label:'Leaderboard', icon:'flag'}" type="button" id="score"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'selection', label:'Share', icon:'share'}" type="button" id="share"></button>
+
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'selection', label:'Profile', icon:'settings'}" type="button" id="profile"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{section: 'selection', label:'About', icon:'important'}" type="button" id="about"></button>
+    </div> 
+</body>
+</html>

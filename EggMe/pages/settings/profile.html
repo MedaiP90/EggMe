@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>profile</title>
+
+    <link href="profile.css" rel="stylesheet" />
+    <script src="profile.js"></script>
+</head>
+<body>
+    <div class="profile fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Profile</span><button id="backProfile" style="position: absolute; right: 24px; border-radius: 50px;">&#xE10F</button>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div style="position: absolute; height: 80vh; width: 85vw; overflow-y: auto; z-index: 1;" align="center">
+                <table style="width: 85vw; overflow-y: auto;">
+                    <tr>
+                        <td>
+                            <div id="nameProfile" style="font-size: 25pt;"></div>
+                        </td>
+                        <td align="right">
+                            <button id="editBtn" style="border-radius: 50px; min-width: 22px !important; margin-left: 25px;">&#xE104</button>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <hr />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span style="font-size: 18pt;">Current score: </span>
+                        </td>
+                        <td align="right">
+                            <span id="cScore" style="font-size: 18pt;"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td align="right">
+                            <span style="font-size: 18pt;">(</span><span id="pScore" style="font-size: 18pt;"></span><span style="font-size: 18pt;">%)</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span style="font-size: 18pt;">Medals won: </span>
+                        </td>
+                        <td align="right">
+                            <span id="medalsNo" style="font-size: 18pt;"></span><span style="font-size: 18pt;"> / 6</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span style="font-size: 18pt;">Current rank: </span>
+                        </td>
+                        <td align="right">
+                            <span id="rank" style="font-size: 18pt;"></span>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div id="temp1"></div>
+
+        </section>
+
+        <div id="name1" style="position: absolute; left: 0px; right: 0px; height: 100vh; width: 100vw; background-color: rgba(0,0,0,.9); z-index: 8;" align="center" hidden>
+            <table>
+                <tr>
+                    <td colspan="2" style="height: 40vh;"></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2" style="font-size: 15pt;">
+                        INSERT YOUR NAME
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <input type="text" id="namePlayer1" style="width: 45vw;" />
+                    </td>
+                    <td align="center">
+                        <input type="button" id="submit1" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

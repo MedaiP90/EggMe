@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>barn</title>
+
+    <link href="barn.css" rel="stylesheet" />
+    <script src="barn.js"></script>
+    <script src="../../js/jquery-2.2.0.js"></script>
+    <script src="../../sounds/sounds.js"></script>
+</head>
+<body>
+    <div class="barn fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Barn</span><button id="backBarn" style="position: absolute; right: 24px; border-radius: 50px;">&#xE10F</button>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <table style="position: relative; left: -24px; width: 100vw;">
+                <tr>
+                    <td style="text-align: center; width: 33vw;"><img src="../../immagini/latest.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMaisB" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                    <td style="text-align: center; width: 34vw;"><img src="../../immagini/latestSilver.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMaisSilverB" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                    <td style="text-align: center; width: 33vw;"><img src="../../immagini/latestGold.png" id="mais" style="height: 5vh; width: auto;" /> <span id="contatoreMaisGoldB" style="position: relative; font-size: 16pt; bottom: 3px;"></span></td>
+                </tr>
+            </table>
+
+            <br />
+
+            <div id="barnDetails" style="position: absolute; overflow-y: auto; height: 70vh;">
+
+                <table style="width: 85vw;" border="1">
+                    <tr>
+                        <td style="text-align: center;">
+                            <p>
+                                <div style="text-align: center;">
+                                    <div>
+                                        <span style="font-size: 20pt;">More taps </span><span style="font-size: 15pt;">(</span><span id="lvTap" style="font-size: 15pt;"></span><span style="font-size: 15pt;">)</span>
+                                        <button id="infoTap" style="margin-left: 20px; font-size: 10pt; border: 2px solid; border-radius: 50px; min-width: 35px !important; min-height: 35px !important;">i</button>
+                                    </div>
+                                    To next level: <span id="tapCost" style="margin-left: 10px;"></span>
+                                    <img src="../../immagini/latest.png" style="height: 15px; width: auto;" /> or
+                                    <span id="tapCostSilver" style="margin-left: 5px;"></span>
+                                    <img src="../../immagini/latestSilver.png" style="height: 15px; width: auto;" /> or 
+                                    <span id="tapCostGold" style="margin-left: 5px;"></span>
+                                    <img src="../../immagini/latestGold.png" style="height: 15px; width: auto;" /> 
+                                </div>
+                                <span style="text-align: center">
+                                    <button id="tap" style="border-radius: 25px; min-width: 7vh !important;"><img src="../../immagini/latest.png" style="height: 6vh; width: auto;" /></button>
+                                    <button id="tapSilver" style="border-radius: 25px; min-width: 7vh !important; margin-left: 10px;"><img src="../../immagini/latestSilver.png" style="height: 6vh; width: auto;" /></button>
+                                    <button id="tapGold" style="border-radius: 25px; min-width: 7vh !important; margin-left: 10px;"><img src="../../immagini/latestGold.png" style="height: 6vh; width: auto;" /></button>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;" id="maisTd">
+                            <p>
+                                <div style="text-align: center;">
+                                    <div>
+                                        <span style="font-size: 20pt;">More corn </span><span style="font-size: 15pt;">(</span><span id="lvMais" style="font-size: 15pt;"></span><span style="font-size: 15pt;">)</span>
+                                        <button id="infoMais" style="margin-left: 20px; font-size: 10pt; border: 2px solid; border-radius: 50px; min-width: 35px !important; min-height: 35px !important;">i</button>
+                                    </div>
+                                    To next level: <span id="maisCost" style="margin-left: 10px;"></span>
+                                    <img src="../../immagini/latest.png" style="height: 15px; width: auto;" /> or
+                                    <span id="maisCostSilver" style="margin-left: 5px;"></span>
+                                    <img src="../../immagini/latestSilver.png" style="height: 15px; width: auto;" /> or
+                                    <span id="maisCostGold" style="margin-left: 5px;"></span>
+                                    <img src="../../immagini/latestGold.png" style="height: 15px; width: auto;" />
+                                </div>
+                                <span style="text-align: center">
+                                    <button id="maisBtn" style="border-radius: 25px; min-width: 7vh !important;"><img src="../../immagini/latest.png" style="height: 6vh; width: auto;" /></button>
+                                    <button id="maisBtnSilver" style="border-radius: 25px; min-width: 7vh !important; margin-left: 10px;"><img src="../../immagini/latestSilver.png" style="height: 6vh; width: auto;" /></button>
+                                    <button id="maisBtnGold" style="border-radius: 25px; min-width: 7vh !important; margin-left: 10px;"><img src="../../immagini/latestGold.png" style="height: 6vh; width: auto;" /></button>
+                                </span>
+                            </p>
+                            <div id="progressLv" style="position: relative; left: 0px; bottom: 0px; height: 5px; background-color: lightgreen;"></div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">
+                            <p>
+                                <div style="text-align: center;">
+                                    <div>
+                                        <span style="font-size: 20pt;">More silver corn</span>
+                                        <button id="infoSilver" style="margin-left: 20px; font-size: 10pt; border: 2px solid; border-radius: 50px; min-width: 35px !important; min-height: 35px !important;">i</button>
+                                    </div>
+                                    Cost: <span id="silvermaisCost" style="margin-left: 10px;">250 </span>
+                                    <img src="../../immagini/latest.png" style="height: 15px; width: auto;" />
+                                </div>
+                                <span style="text-align: center">
+                                    <button id="silvermaisBtn" style="border-radius: 25px; min-width: 7vh !important;"><img src="../../immagini/latest.png" style="height: 6vh; width: auto;" /></button>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="text-align: center;">
+                            <p>
+                                <div style="text-align: center;">
+                                    <div>
+                                        <span style="font-size: 20pt;">More golden corn</span>
+                                        <button id="infoGold" style="margin-left: 20px; font-size: 10pt; border: 2px solid; border-radius: 50px; min-width: 35px !important; min-height: 35px !important;">i</button>
+                                    </div>
+                                    Cost: <span id="silvermaisCost" style="margin-left: 10px;">450 </span>
+                                    <img src="../../immagini/latest.png" style="height: 15px; width: auto;" /> or
+                                    <span id="silvermaisCost" style="margin-left: 10px;">100 </span>
+                                    <img src="../../immagini/latestSilver.png" style="height: 15px; width: auto;" />
+                                </div>
+                                <span style="text-align: center">
+                                    <button id="goldmaisBtn" style="border-radius: 25px; min-width: 7vh !important;"><img src="../../immagini/latest.png" style="height: 6vh; width: auto;" /></button>
+                                    <button id="goldmaisBtnSilver" style="border-radius: 25px; margin-left: 10px; min-width: 7vh !important;"><img src="../../immagini/latestSilver.png" style="height: 6vh; width: auto;" /></button>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>

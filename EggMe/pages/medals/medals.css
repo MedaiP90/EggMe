@@ -1,0 +1,44 @@
+﻿.medals section {
+	margin: auto 120px;
+}
+
+.phone .medals .page-section {
+	margin: auto 24px;
+}
+
+.phone .medals .page-header .titlearea {
+	-ms-grid-column: 1;
+	margin-top: 37px;
+	margin-left: 24px;
+	font-size: 28pt;
+	width: calc(100vw - 20px);
+}
+
+.phone .medals .back-button {
+	display: none;
+}
+
+.fragment {
+	-ms-grid-columns: 1fr;
+	-ms-grid-rows: 128px 1fr;
+	display: -ms-grid;
+	height: 100%;
+	width: 100%;
+}
+
+	.fragment section[role=main] {
+		-ms-grid-row: 2;
+		height: 100%;
+	}
+
+.medal {
+    width: 35vw;
+    height: auto;
+    margin-top: 10px;
+}
+
+.medalName {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+}

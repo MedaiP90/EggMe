@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>score</title>
+
+    <link href="score.css" rel="stylesheet" />
+    <script src="score.js"></script>
+    <script src="../../js/jquery-2.2.0.js"></script>
+</head>
+<body>
+    <div class="score fragment">
+        <header class="page-header" aria-label="Header content" role="banner">
+            <button class="back-button" data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Leaderboard</span><button id="backScore" style="position: absolute; right: 24px; border-radius: 50px;">&#xE10F</button>
+            </h1>
+        </header>
+        <section class="page-section" aria-label="Main content" role="main">
+            <div id="sForm" align="center">
+                <table style="width: 85vw;">
+                    <tr id="sModule" align="center">
+                        <td align="right">
+                            <input type="text" id="key" style="width: 65vw; border-bottom-left-radius: 25px; border-top-left-radius: 25px; padding-left: 10px;" placeholder="Search your score" />
+                        </td>
+                        <td align="left">
+                            <input type="button" value="&#xE11A" style="min-width: 20vw !important; border-bottom-right-radius: 40px; border-top-right-radius: 40px;" id="search" />
+                        </td>
+                    </tr>
+                    <tr id="rModule" style="font-size: 24pt; font-weight: 900;" hidden>
+                        
+                    </tr>
+                </table>
+            </div>
+            <div id="scores" style="height: 70vh; overflow-y: auto; font-size: 15pt;" align="center">
+
+            </div>
+            <div id="temp">
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

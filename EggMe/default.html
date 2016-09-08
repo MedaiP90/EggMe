@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>EggMe</title>
+
+    <!-- Riferimenti WinJS -->
+    <!-- In fase di esecuzione, ui-themed.css viene risolto in ui-themed.theme-light.css or ui-themed.theme-dark.css 
+    in base all'impostazione del tema dell'utente. Fa parte della funzionalità di caricamento risorse MRT. -->
+    <link href="/css/ui-themed.theme-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.Phone.WinJS.2.1/js/base.js"></script>
+    <script src="//Microsoft.Phone.WinJS.2.1/js/ui.js"></script>
+
+    <!-- Riferimenti EggMe -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+</head>
+<body class="phone">
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/loading/loading.html'}"></div>
+    <!--<div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{label:'Barn', icon:'home'}" type="button" id="barn"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{label:'Bank', icon:'shop'}" type="button" id="shop"></button>
+    </div>--> 
+</body>
+</html>

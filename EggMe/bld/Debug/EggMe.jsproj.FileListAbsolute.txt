@@ -1,0 +1,30 @@
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\Debug\ReverseMap\resources.pri
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\Debug\AppxManifest.xml
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\Debug\EggMe.build.appxrecipe
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\priconfig.xml
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\priconfig.xml.intermediate
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\layout.resfiles
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\layout.resfiles.intermediate
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\resources.resfiles
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\resources.resfiles.intermediate
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\pri.resfiles
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\pri.resfiles.intermediate
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\qualifiers.txt
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\qualifiers.txt.intermediate
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\Debug\ProjectArchitectures.txt
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bin\Debug\ReverseMap\resources.pri
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bin\Debug\AppxManifest.xml
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bin\Debug\EggMe.build.appxrecipe
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\priconfig.xml
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\priconfig.xml.intermediate
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\layout.resfiles
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\layout.resfiles.intermediate
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\resources.resfiles
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\resources.resfiles.intermediate
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\pri.resfiles
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\pri.resfiles.intermediate
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\qualifiers.txt
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\qualifiers.txt.intermediate
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\ProjectArchitectures.txt

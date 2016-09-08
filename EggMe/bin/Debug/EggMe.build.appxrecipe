@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-T1LNNE3</Machine>
+    <WindowsUser>medai</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>67965f23-91da-4f47-b69b-29c70d6c8335</PackageIdentityName>
+    <PackageIdentityPublisher>CN=8AB58F7D-76BF-48EA-9647-0C3E72E3AACA</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\css\ui-themed.css">
+      <PackagePath>css\ui-themed.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\css\ui-themed.theme-dark.css">
+      <PackagePath>css\ui-themed.theme-dark.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\css\ui-themed.theme-light.css">
+      <PackagePath>css\ui-themed.theme-light.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\loading\loading.css">
+      <PackagePath>pages\loading\loading.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\settings\profile.css">
+      <PackagePath>pages\settings\profile.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\about\about.css">
+      <PackagePath>pages\about\about.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\medals\medals.css">
+      <PackagePath>pages\medals\medals.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\score\score.css">
+      <PackagePath>pages\score\score.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\barn.css">
+      <PackagePath>pages\shop\barn.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\shop.css">
+      <PackagePath>pages\shop\shop.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\SplashScreen.scale-240.png">
+      <PackagePath>images\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack1.png">
+      <PackagePath>immagini\crack1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack2.png">
+      <PackagePath>immagini\crack2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack3.png">
+      <PackagePath>immagini\crack3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack4.png">
+      <PackagePath>immagini\crack4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack5.png">
+      <PackagePath>immagini\crack5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack6.png">
+      <PackagePath>immagini\crack6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack7.png">
+      <PackagePath>immagini\crack7.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack8.png">
+      <PackagePath>immagini\crack8.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\crack9.png">
+      <PackagePath>immagini\crack9.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\cracked.png">
+      <PackagePath>immagini\cracked.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\egg-32865_960_720.png">
+      <PackagePath>immagini\egg-32865_960_720.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\home.png">
+      <PackagePath>immagini\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\latest.png">
+      <PackagePath>immagini\latest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\latestGold.png">
+      <PackagePath>immagini\latestGold.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\latestSilver.png">
+      <PackagePath>immagini\latestSilver.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\prev.png">
+      <PackagePath>immagini\prev.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\immagini\SplashScreen.scale-240.png">
+      <PackagePath>immagini\SplashScreen.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal1.png">
+      <PackagePath>medalsRes\medal1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal2.png">
+      <PackagePath>medalsRes\medal2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal3.png">
+      <PackagePath>medalsRes\medal3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal4.png">
+      <PackagePath>medalsRes\medal4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal5.png">
+      <PackagePath>medalsRes\medal5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\medalsRes\medal6.png">
+      <PackagePath>medalsRes\medal6.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\medalsRes\unknownMedal.png">
+      <PackagePath>pages\medalsRes\unknownMedal.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\js\html2canvas_old.js">
+      <PackagePath>js\html2canvas_old.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\js\jquery-2.2.0.js">
+      <PackagePath>js\jquery-2.2.0.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\js\navigator.js">
+      <PackagePath>js\navigator.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\loading\loading.js">
+      <PackagePath>pages\loading\loading.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\settings\profile.js">
+      <PackagePath>pages\settings\profile.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\sounds.js">
+      <PackagePath>sounds\sounds.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\about\about.js">
+      <PackagePath>pages\about\about.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\medals\medals.js">
+      <PackagePath>pages\medals\medals.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\score\score.js">
+      <PackagePath>pages\score\score.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\barn.js">
+      <PackagePath>pages\shop\barn.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\shop.js">
+      <PackagePath>pages\shop\shop.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\loading\loading.html">
+      <PackagePath>pages\loading\loading.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\settings\profile.html">
+      <PackagePath>pages\settings\profile.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\about\about.html">
+      <PackagePath>pages\about\about.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\default.html">
+      <PackagePath>default.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\medals\medals.html">
+      <PackagePath>pages\medals\medals.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\score\score.html">
+      <PackagePath>pages\score\score.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\barn.html">
+      <PackagePath>pages\shop\barn.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\pages\shop\shop.html">
+      <PackagePath>pages\shop\shop.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\Blop.mp3">
+      <PackagePath>sounds\Blop.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\coins-in-hand-1.mp3">
+      <PackagePath>sounds\coins-in-hand-1.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\Doorbell.mp3">
+      <PackagePath>sounds\Doorbell.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\DOORSLM2.mp3">
+      <PackagePath>sounds\DOORSLM2.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\TaDa.mp3">
+      <PackagePath>sounds\TaDa.mp3</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\sounds\UPSBOX2.wav">
+      <PackagePath>sounds\UPSBOX2.wav</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\medai\Documents\Projects VS2015U2\EggMe\EggMe\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

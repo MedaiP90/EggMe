@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\wp-results.xsl'?>
+<REPORT xml:lang="it-IT" OVERALL_RESULT="PASS" VERSION="10.0" LATEST_VERSION="FALSE" UPDATE_DOWNLOAD_URL="http://go.microsoft.com/fwlink/?LinkID=246599&amp;amp;clcid=0x409" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="CN=8AB58F7D-76BF-48EA-9647-0C3E72E3AACA" APP_NAME="59041BolzenXL.EggMe" APP_VERSION="1.1.2.7" OSVERSION="10.0.14393.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1040" VALIDATION_TYPE="UI" ReportGenerationTime="03/09/2016 14:15:08" ID="647d8a9e68ca4c71e6dd9c70f46a6838">
+  <REQUIREMENTS>
+    <REQUIREMENT NUMBER="1" TITLE="Installazione pulita e reversibile - Test" RATIONALE="Un'installazione pulita e reversibile consente agli utenti di gestire correttamente (distribuire e rimuovere) le applicazioni sul loro sistema." />
+    <REQUIREMENT NUMBER="2" TITLE="Installa nelle cartelle corrette - Test" RATIONALE="Windows fornisce specifiche cartelle nel file system in cui archiviare programmi e componenti software, nonché dati sulle applicazioni condivisi e specifici di un utente." />
+    <REQUIREMENT NUMBER="3" TITLE="File con firma digitale - Test" RATIONALE="Una firma digitale Authenticode consente agli utenti di verificare che il software sia originale. Consente inoltre di rilevare se un file è stato alterato (ad esempio, infettato da un virus)." />
+    <REQUIREMENT NUMBER="4" TITLE="Supporta Windows x64 - Test" RATIONALE="Per mantenere la compatibilità con le versioni a 64 bit di Windows, è necessario che le applicazioni supportino a livello nativo le applicazioni Windows a 64 bit o almeno a 32 bit." />
+    <REQUIREMENT NUMBER="5" TITLE="Controllo della versione del sistema operativo - Test" RATIONALE="Le applicazioni non devono eseguire il controllo della versione sulla base dell'uguaglianza (== 5.1). Se si ha bisogno di una specifica funzionalità, verificare che tale funzionalità sia disponibile. Se si ha bisogno di Windows XP, effettuare la verifica per Windows XP o versioni successive (&gt;= 5.1). In questo modo, il codice di rilevamento continuerà a funzionare sulle versioni future di Windows. I programmi di installazione dei driver e i moduli di disinstallazione non devono controllare la versione del sistema operativo." />
+    <REQUIREMENT NUMBER="6" TITLE="Controllo account utente - Test" RATIONALE="Per eseguire la maggior parte delle applicazioni non è necessario disporre dei privilegi di amministratore, ma è sufficiente accedere come utente standard. Le applicazioni Windows devono avere un manifesto (incorporato o esterno) che ne definisca il livello di esecuzione e indichi così al sistema operativo i privilegi necessari per la loro esecuzione." />
+    <REQUIREMENT NUMBER="7" TITLE="Conformità ai messaggi di Gestione riavvio sistema" RATIONALE="Se si verifica un arresto critico, le applicazioni che restituiscono FALSE per WM_QUERYENDSESSION riceveranno il comando WM_ENDSESSION e verranno chiuse, mentre quelle che sono andate in timeout in risposta a WM_QUERYENDSESSION verranno terminate." />
+    <REQUIREMENT NUMBER="8" TITLE="Modalità sicura - Test" RATIONALE="Per impostazione predefinita, la maggior parte dei driver e dei servizi che non sono forniti preinstallati in Windows non viene avviata in modalità sicura. Lasciarli disabilitati a meno che non siano necessari per eseguire operazioni di base del sistema o per attività di diagnostica e ripristino." />
+    <REQUIREMENT NUMBER="9" TITLE="Sessioni multiutente - Test" RATIONALE="Gli utenti di Windows dovrebbero essere in grado di eseguire sessioni simultanee senza conflitti o interruzioni. È necessario che sia garantito il corretto funzionamento delle applicazioni quando vengono eseguite in sessioni multiple in locale o remoto. Le impostazioni delle applicazioni e i file di dati non devono essere condivisi tra diversi utenti. La privacy e le preferenze di un utente devono restare isolate all'interno della sessione dell'utente." />
+    <REQUIREMENT NUMBER="10" TITLE="Distribuzione e avvio - Test" RATIONALE="Errori quali interruzioni o arresti anomali di un'applicazione rappresentano una notevole fonte di frustrazione per gli utenti. L'eliminazione di questi errori migliora la stabilità e l'affidabilità dell'applicazione e garantisce agli utenti una maggiore soddisfazione." />
+    <REQUIREMENT NUMBER="11" TITLE="Compatibilità e resilienza - Test" RATIONALE="Quando Windows rileva il comportamento incompatibile di un'applicazione, applica una correzione rapida per la compatibilità che fa sì che l'applicazione si comporti correttamente, ottimizzandone l'uso da parte degli utenti. Le applicazioni non devono affidarsi a questa soluzione perché viene fornita esclusivamente per consentire il corretto funzionamento delle applicazioni legacy in Windows." />
+    <REQUIREMENT NUMBER="12" TITLE="Test conformità pacchetto" RATIONALE="Nel manifesto del pacchetto mancano uno o più attributi necessari.">
+      <TEST INDEX="77" NAME="Conteggio applicazioni" DESCRIPTION="Un pacchetto non può definire più app nel manifesto." EXECUTIONTIME="00h:00m:02s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="31" NAME="Manifesto dell'app" DESCRIPTION="Il manifesto dell'app deve includere voci valide in tutti i campi obbligatori." EXECUTIONTIME="00h:00m:00s.99ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="74" NAME="Manifesto aggregazioni" DESCRIPTION="Il manifesto delle aggregazioni deve includere voci valide per tutti i campi obbligatori." EXECUTIONTIME="00h:00m:01s.08ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="75" NAME="Dimensione pacchetto" DESCRIPTION="La dimensione file del pacchetto non deve superare 4 gigabyte." EXECUTIONTIME="00h:00m:01s.19ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="13" TITLE="Procedure consigliate per la sicurezza di Windows - Test" RATIONALE="Le applicazioni non devono modificare le impostazioni di sicurezza predefinite di Windows." />
+    <REQUIREMENT NUMBER="14" TITLE="Funzionalità di sicurezza di Windows - Test" RATIONALE="Le applicazioni devono acconsentire esplicitamente alle funzionalità di sicurezza di Windows.">
+      <TEST INDEX="33" NAME="Analizzatore binario" DESCRIPTION="Analisi delle funzionalità di sicurezza abilitate sui file binari" EXECUTIONTIME="00h:00m:02s.47ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="70" NAME="Analisi file esclusi" DESCRIPTION="Analisi dell'applicazione per rilevare i file non sicuri noti" EXECUTIONTIME="00h:00m:00s.94ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="62" NAME="Firma del codice privato" DESCRIPTION="Il pacchetto dell'app non deve contenere file di chiave per la firma del codice privato." EXECUTIONTIME="00h:00m:01s.06ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="15" TITLE="API Supportate - Test" RATIONALE="L'applicazione deve fare riferimento esclusivamente alle API consentite da Windows SDK per le app di Windows Store.">
+      <TEST INDEX="72" NAME="API supportate" DESCRIPTION="L'app di Windows Phone deve utilizzare solo le API della piattaforma supportata." EXECUTIONTIME="00h:00m:01s.13ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="17" TITLE="Prestazioni - Test" RATIONALE="L'applicazione deve avviarsi ed entrare in sospensione velocemente utilizzando una quantità ragionevole di risorse di sistema (CPU, I/O file, memoria, ecc.) per supportare un passaggio rapido e il multitasking tra le applicazioni aperte in precedenza." />
+    <REQUIREMENT NUMBER="19" TITLE="Risorse del manifesto dell'app - Test" RATIONALE="È necessario definire risorse valide nel file resources.pri per il manifesto di pacchetto app , così come per le specifiche di pacchetto app e lo schema manifesto app.">
+      <TEST INDEX="45" NAME="Risorse dell'app" DESCRIPTION="Nel file resources.pri devono esserci risorse valide definite per il pacchetto." EXECUTIONTIME="00h:00m:01s.75ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="61" NAME="Personalizzazione" DESCRIPTION="L'app non deve utilizzare le immagini predefinite compresse dai campioni di Windows SDK o Visual Studio." EXECUTIONTIME="00h:00m:02s.16ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="20" TITLE="Configurazione debug - Test" RATIONALE="L'app non deve installare alcun file binario di debug.">
+      <TEST INDEX="46" NAME="Configurazione di debug" DESCRIPTION="L'app non deve installare alcun file binario di debug." EXECUTIONTIME="00h:00m:01s.06ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="21" TITLE="Test codifica file" RATIONALE="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente.">
+      <TEST INDEX="49" NAME="Codifica file UTF-8" DESCRIPTION="I pacchetti che contengono un'app di Windows Store HTML5 devono essere codificati correttamente." EXECUTIONTIME="00h:00m:00s.94ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="22" TITLE="Test funzionalità Direct3D" RATIONALE="L'app deve utilizzare la funzionalità Direct3D in modo corretto." />
+    <REQUIREMENT NUMBER="23" TITLE="Test delle funzionalità dell'app" RATIONALE="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento.">
+      <TEST INDEX="52" NAME="Funzionalità speciali" DESCRIPTION="I pacchetti che dichiarano funzionalità speciali dovranno fornire una giustificazione durante il processo di caricamento." EXECUTIONTIME="00h:00m:00s.90ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="24" TITLE="Convalida dei metadati per Windows Runtime" RATIONALE="I metadati devono essere conformi e coerenti indipendentemente dalla loro origine.">
+      <TEST INDEX="56" NAME="Attributo ExclusiveTo" DESCRIPTION="Una classe non deve implementare un'interfaccia contrassegnata come ExclusiveTo per un'altra classe." EXECUTIONTIME="00h:00m:02s.24ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="57" NAME="Percorso del tipo" DESCRIPTION="I tipi devono essere definiti nel file di metadati con il più lungo spazio dei nomi corrispondente." EXECUTIONTIME="00h:00m:00s.78ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="55" NAME="Distinzione maiuscole/minuscole per il nome del tipo" DESCRIPTION="Lo spazio dei nomi e i nomi del tipo non devono differire solo per la combinazione di maiuscole e minuscole." EXECUTIONTIME="00h:00m:00s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="54" NAME="Correttezza per il nome del tipo" DESCRIPTION="Lo spazio dei nomi Windows può contenere solo tipi di sistemi e lo spazio dei nomi globale può non contenere alcun tipo." EXECUTIONTIME="00h:00m:00s.68ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="58" NAME="Correttezza per i metadati generali" DESCRIPTION="I file dei metadati devono soddisfare diversi requisiti per essere validi e corretti." EXECUTIONTIME="00h:00m:01s.88ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+      <TEST INDEX="53" NAME="Proprietà" DESCRIPTION="Impossibile utilizzare le proprietà di sola scrittura e indicizzatore. I metodi Get e Set corrispondenti devono essere dello stesso tipo." EXECUTIONTIME="00h:00m:00s.72ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="25" TITLE="Test integrità pacchetto" RATIONALE="Convalida dei contenuti del pacchetto dell'app per accertarne la correttezza.">
+      <TEST INDEX="63" NAME="File appropriati per la piattaforma" DESCRIPTION="L'app non deve installare file non corrispondenti all'architettura del processore di destinazione." EXECUTIONTIME="00h:00m:00s.96ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+    <REQUIREMENT NUMBER="26" TITLE="Supporto DPI elevato" RATIONALE="L'applicazione deve impostare il rilevamento della risoluzione in DPI in modo che l'interfaccia utente risulti coerente su un'ampia gamma di schermi con DPI elevato." />
+    <REQUIREMENT NUMBER="27" TITLE="Test utilizzo risorse" RATIONALE="Le attività in background WinJS devono chiamare close() per liberare le risorse.">
+      <TEST INDEX="68" NAME="Attività in background WinJS" DESCRIPTION="Le attività in background WinJS devono chiamare close() per liberare risorse." EXECUTIONTIME="00h:00m:01s.08ms">
+        <RESULT><![CDATA[PASS]]></RESULT>
+        <MESSAGES />
+      </TEST>
+    </REQUIREMENT>
+  </REQUIREMENTS>
+  <APPLICATIONS>
+    <Installed_Programs>
+      <Program Name="59041BolzenXL.EggMe" Type="Application" Source="AppxPackage" Publisher="CN=8AB58F7D-76BF-48EA-9647-0C3E72E3AACA" Version="1.1.2.7" Language="1033" InstallDate="09/03/2016 12:14:35" RootDirPath="C:\WINDOWS\temp\appcert_2C30\59041BolzenXL.EggMe_1.1.2.7_neutral__n33p2t0rcdkde" Id="000059d15c464265193f7cfa35f4e6811ee100000904">
+        <Indicators>
+          <WindowsStoreAppManifestIndicators>
+            <PackageManifest PackageFullName="59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde">
+              <Package>
+                <Identity Name="59041BolzenXL.EggMe" Version="1.1.2.7" Publisher="CN=8AB58F7D-76BF-48EA-9647-0C3E72E3AACA" ProcessorArchitecture="neutral" />
+                <PhoneIdentity PhoneProductId="67965f23-91da-4f47-b69b-29c70d6c8335" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+                <Properties>
+                  <DisplayName>EggMe</DisplayName>
+                  <PublisherDisplayName>Bolzen XL</PublisherDisplayName>
+                  <Logo>images\StoreLogo.png</Logo>
+                </Properties>
+                <Prerequisites>
+                  <OSMinVersion>6.3.1</OSMinVersion>
+                  <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+                </Prerequisites>
+                <Resources>
+                  <Resource Language="EN" />
+                </Resources>
+                <Applications>
+                  <Application Id="App" StartPage="default.html">
+                    <VisualElements DisplayName="EggMe" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png" Description="EggMe" ForegroundText="light" BackgroundColor="transparent">
+                      <DefaultTile Wide310x150Logo="images\Wide310x150Logo.png" Square71x71Logo="images\Square71x71Logo.png">
+                        <ShowNameOnTiles>
+                          <ShowOn Tile="square150x150Logo" />
+                          <ShowOn Tile="wide310x150Logo" />
+                        </ShowNameOnTiles>
+                      </DefaultTile>
+                      <SplashScreen Image="images\SplashScreen.png" BackgroundColor="#1d1d1d" />
+                      <InitialRotationPreference>
+                        <Rotation Preference="portrait" />
+                      </InitialRotationPreference>
+                    </VisualElements>
+                  </Application>
+                </Applications>
+                <Capabilities>
+                  <Capability Name="internetClientServer" />
+                </Capabilities>
+                <Dependencies>
+                  <PackageDependency Name="Microsoft.Phone.WinJS.2.1" MinVersion="1.0.9651.0" />
+                </Dependencies>
+              </Package>
+            </PackageManifest>
+          </WindowsStoreAppManifestIndicators>
+        </Indicators>
+        <StaticProperties>
+          <Files Id="000099e290d3ae13b657a301b111235e87a70ee58c6c">
+            <File Name="default.html" Id="00001ad7783abc0cd8f2483b3c14887ec1254f7d009c" Size="0x54f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\default.html" LongPathHash="0000f26436f677a88009a071dae4949edd98122f376d" />
+            <File Name="about.html" Id="00003c306a042293fe515e9586be6407b15afe71c5ec" Size="0x63d" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\about\about.html" LongPathHash="000055b4d1285dd0282b26de85581d38423f058e7133" />
+            <File Name="about.js" Id="0000cd294ac69ef627f48816c9b15ba75ed13219f01c" Size="0x5e7" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\about\about.js" LongPathHash="0000da26317a936aaaa1f606d0910e34c71b9ba1ce9a" />
+            <File Name="home.html" Id="0000c8de5645040b77dbdef5b8e622591464bb41669a" Size="0x1b22" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\home\home.html" LongPathHash="000079287a42adfbdc88616a1984d68d0fd5c3c4a80a" />
+            <File Name="loading.html" Id="0000cc1f155539caa12fa2c5f79fd819cc22dac7c628" Size="0x620" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\loading\loading.html" LongPathHash="0000cd4270a9f5b99bd979ea448d74604009b16afe0f" />
+            <File Name="loading.js" Id="0000b924ed67af2c71c63691b21c0bbcb6e701b3fc39" Size="0x904" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\loading\loading.js" LongPathHash="0000c2fe1f8e00357b0a3fc1515bdd080721e59fefb9" />
+            <File Name="medals.html" Id="000068a5e01dc12d08101b532b885e2c1a95ab80ab67" Size="0x9d0" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\medals\medals.html" LongPathHash="0000911907df87fe2633ba5f79e641add8a49bf1169d" />
+            <File Name="medals.js" Id="00002c0b8528f7449a6d1d56238ecbb233c0cc429406" Size="0xa06" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\medals\medals.js" LongPathHash="00008173176a09d9351f1e370c438d7638ebcefa806e" />
+            <File Name="score.html" Id="0000f3ad9b7d3614d6cd0790bc9a1ca8ef237bac528d" Size="0x7b1" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\score\score.html" LongPathHash="0000c70863259d80420f33cbe97c3f49ca8a32a5b8ae" />
+            <File Name="resources.pri" Id="000076702ee04ac014aa347fa18bfb3d766592532c2d" Size="0x2500" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\resources.pri" LongPathHash="0000aa3c31a019d9eaf766b2e8e5b2c0881949752983" />
+            <File Name="default.js" Id="0000667b0f3c44aca5885adc7babe10dd90ece30d111" Size="0x9f8" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\js\default.js" LongPathHash="0000824a837f61de1e0725e4b94bea9e699a98a1f20e" />
+            <File Name="html2canvas_old.js" Id="00000664375e92137c6fb25ec88917e659d73e13c779" Size="0x1fa9f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\js\html2canvas_old.js" LongPathHash="00000515ad34a56318ad195eda973d4e70681482be54" />
+            <File Name="jquery-2.2.0.js" Id="00007c7fa1d10a3290982f47674258255027a2011e3a" Size="0x3f157" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\js\jquery-2.2.0.js" LongPathHash="00005611cd4a9dfa1268bf0f8130024eaf643fb3b2c9" />
+            <File Name="navigator.js" Id="0000e6c79ca486604aecd0336a0e8f839dc498fbb031" Size="0x1624" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\js\navigator.js" LongPathHash="0000bcbf5be1ca58e57ee1ed821fd920583e229a0f7b" />
+            <File Name="shop.js" Id="000098b11a6fbf830f4d43f9ef6eb9ff6d227b5ebc53" Size="0x30d3" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\shop\shop.js" LongPathHash="00000b27c9c8c2a6e62fd62d1250e6f100eda8f1d3d9" />
+            <File Name="shop.html" Id="00002174dfc23b5d2abaf0bcfb0832fc4f909c37d294" Size="0x1794" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\shop\shop.html" LongPathHash="0000b71f2623b828bae7bc49483a72d550542e2b4a91" />
+            <File Name="profile.js" Id="0000036779655849981d95d5e6a844dff07ce171e37a" Size="0x1691" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\settings\profile.js" LongPathHash="00007b328002615baec2acfcfa1c8046ab7dbb953d32" />
+            <File Name="barn.js" Id="000022ee72273fd65bfe5e700c4bc9bc68a53ae2373e" Size="0x5cf5" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\shop\barn.js" LongPathHash="00009b1dd79cc200bab150bb6c28a415c2793de21b31" />
+            <File Name="barn.html" Id="000094d0abe1f403ae0a455f99d6dca439eaa1bd0baf" Size="0x264f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\shop\barn.html" LongPathHash="00009153fb876a15488d642bc2578fabae8196913374" />
+            <File Name="sounds.js" Id="00007fd332f2a1ff90c6f9c98892d85a75e5ab5ee28d" Size="0x313" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\sounds\sounds.js" LongPathHash="00003690c12d6189b34e5e483fb2b8fd4d9514795093" />
+            <File Name="score.js" Id="0000c3777cede10d2761a0a1fabea13cf8a71492928f" Size="0x131f" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\score\score.js" LongPathHash="00009e981a8eaea26e7e060e30b791160f6f9aee2c92" />
+            <File Name="profile.html" Id="0000ce9d537e1f1e0d7b612cc328a4c53476877172db" Size="0x1062" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\settings\profile.html" LongPathHash="0000de16fe4800d8b8ac9f975fef69b7dacb1e208d00" />
+            <File Name="home.js" Id="000095a9da51bf0f3aa81f5f1ac67b2e626b39d71917" Size="0x4867" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2c30\59041bolzenxl.eggme_1.1.2.7_neutral__n33p2t0rcdkde\pages\home\home.js" LongPathHash="00002440a5691fa6638b31e393ce64e674d8a52e9179" />
+          </Files>
+        </StaticProperties>
+      </Program>
+    </Installed_Programs>
+  </APPLICATIONS>
+  <DEPENDENCY_INFORMATION>
+    <AitStaticAnalysis Type="Template">
+      <AitFile ErrorCode="0" Name="profile.js" Id="0000036779655849981d95d5e6a844dff07ce171e37a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkInformation" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.toStaticHTML" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="html2canvas_old.js" Id="00000664375e92137c6fb25ec88917e659d73e13c779">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.body.appendChild" />
+          <AitFeature Name="document.body.innerHTML" />
+          <AitFeature Name="document.body.removeChild" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.createRange" />
+          <AitFeature Name="document.createTextNode" />
+          <AitFeature Name="document.defaultView.pageXOffset" />
+          <AitFeature Name="document.defaultView.pageYOffset" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentMode" />
+          <AitFeature Name="document.getElementsByTagName" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.querySelector" />
+          <AitFeature Name="window.ES6Promise.polyfill" />
+          <AitFeature Name="window.console.log" />
+          <AitFeature Name="window.html2canvas" />
+          <AitFeature Name="window.html2canvas.logging" />
+          <AitFeature Name="window.html2canvas.proxy" />
+          <AitFeature Name="window.html2canvas.punycode" />
+          <AitFeature Name="window.html2canvas.punycode.ucs2.decode" />
+          <AitFeature Name="window.html2canvas.punycode.ucs2.encode" />
+          <AitFeature Name="window.html2canvas.start" />
+          <AitFeature Name="window.innerHeight" />
+          <AitFeature Name="window.innerWidth" />
+          <AitFeature Name="window.location.href" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.html" Id="00001ad7783abc0cd8f2483b3c14887ec1254f7d009c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="shop.html" Id="00002174dfc23b5d2abaf0bcfb0832fc4f909c37d294">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="barn.js" Id="000022ee72273fd65bfe5e700c4bc9bc68a53ae2373e">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="medals.js" Id="00002c0b8528f7449a6d1d56238ecbb233c0cc429406">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="about.html" Id="00003c306a042293fe515e9586be6407b15afe71c5ec">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+          <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.System.Launcher.launchUriAsync" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="default.js" Id="0000667b0f3c44aca5885adc7babe10dd90ece30d111">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Application" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Utilities.Scheduler" />
+          <AitFeature Name="Windows.ApplicationModel.Activation" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="medals.html" Id="000068a5e01dc12d08101b532b885e2c1a95ab80ab67">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="jquery-2.2.0.js" Id="00007c7fa1d10a3290982f47674258255027a2011e3a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="document.activeElement" />
+          <AitFeature Name="document.addEventListener" />
+          <AitFeature Name="document.createComment" />
+          <AitFeature Name="document.createDocumentFragment" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="document.defaultView" />
+          <AitFeature Name="document.documentElement" />
+          <AitFeature Name="document.documentElement.doScroll" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="document.getElementsByClassName" />
+          <AitFeature Name="document.getElementsByName" />
+          <AitFeature Name="document.hasFocus" />
+          <AitFeature Name="document.head.appendChild" />
+          <AitFeature Name="document.implementation" />
+          <AitFeature Name="document.implementation.createHTMLDocument" />
+          <AitFeature Name="document.msFullscreenElement" />
+          <AitFeature Name="document.querySelectorAll" />
+          <AitFeature Name="document.readyState" />
+          <AitFeature Name="document.removeEventListener" />
+          <AitFeature Name="location.protocol" />
+          <AitFeature Name="window.DOMParser" />
+          <AitFeature Name="window.XMLHttpRequest" />
+          <AitFeature Name="window.addEventListener" />
+          <AitFeature Name="window.clearInterval" />
+          <AitFeature Name="window.clearTimeout" />
+          <AitFeature Name="window.getComputedStyle" />
+          <AitFeature Name="window.location.hash" />
+          <AitFeature Name="window.removeEventListener" />
+          <AitFeature Name="window.setInterval" />
+          <AitFeature Name="window.setTimeout" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="sounds.js" Id="00007fd332f2a1ff90c6f9c98892d85a75e5ab5ee28d" />
+      <AitFile ErrorCode="0" Name="barn.html" Id="000094d0abe1f403ae0a455f99d6dca439eaa1bd0baf">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.js" Id="000095a9da51bf0f3aa81f5f1ac67b2e626b39d71917">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.history.backStack" />
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView" />
+          <AitFeature Name="Windows.ApplicationModel.DataTransfer.DataTransferManager.showShareUI" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkInformation" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="shop.js" Id="000098b11a6fbf830f4d43f9ef6eb9ff6d227b5ebc53">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.Store.CurrentApp" />
+          <AitFeature Name="Windows.Storage.ApplicationData.current" />
+          <AitFeature Name="Windows.UI.Popups.MessageDialog" />
+          <AitFeature Name="Windows.UI.Popups.UICommand" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="loading.js" Id="0000b924ed67af2c71c63691b21c0bbcb6e701b3fc39">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.Promise.timeout" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="score.js" Id="0000c3777cede10d2761a0a1fabea13cf8a71492928f">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkConnectivityLevel.internetAccess" />
+          <AitFeature Name="Windows.Networking.Connectivity.NetworkInformation" />
+          <AitFeature Name="document.getElementById" />
+          <AitFeature Name="window.toStaticHTML" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="home.html" Id="0000c8de5645040b77dbdef5b8e622591464bb41669a">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.AppBarCommand" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="loading.html" Id="0000cc1f155539caa12fa2c5f79fd819cc22dac7c628" />
+      <AitFile ErrorCode="0" Name="about.js" Id="0000cd294ac69ef627f48816c9b15ba75ed13219f01c">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Navigation.navigate" />
+          <AitFeature Name="WinJS.UI.Pages.define" />
+          <AitFeature Name="WinJS.UI.processAll" />
+          <AitFeature Name="Windows.ApplicationModel.Package.current.id.version.build" />
+          <AitFeature Name="Windows.ApplicationModel.Package.current.id.version.major" />
+          <AitFeature Name="Windows.ApplicationModel.Package.current.id.version.minor" />
+          <AitFeature Name="Windows.ApplicationModel.Package.current.id.version.revision" />
+          <AitFeature Name="document.getElementById" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="profile.html" Id="0000ce9d537e1f1e0d7b612cc328a4c53476877172db">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="navigator.js" Id="0000e6c79ca486604aecd0336a0e8f839dc498fbb031">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.Class.define" />
+          <AitFeature Name="WinJS.Namespace.define" />
+          <AitFeature Name="WinJS.Navigation" />
+          <AitFeature Name="WinJS.Promise.as" />
+          <AitFeature Name="WinJS.UI.Animation.enterPage" />
+          <AitFeature Name="WinJS.UI.Pages.render" />
+          <AitFeature Name="WinJS.Utilities.disposeSubTree" />
+          <AitFeature Name="document.createElement" />
+          <AitFeature Name="window.getComputedStyle" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="score.html" Id="0000f3ad9b7d3614d6cd0790bc9a1ca8ef237bac528d">
+        <AitCategory Id="WRTJavaScript">
+          <AitFeature Name="WinJS.UI.BackButton" />
+        </AitCategory>
+      </AitFile>
+    </AitStaticAnalysis>
+  </DEPENDENCY_INFORMATION>
+</REPORT>

@@ -1,0 +1,15 @@
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\x86\Debug\ReverseMap\resources.pri
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\x86\Debug\AppxManifest.xml
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bin\x86\Debug\EggMe.build.appxrecipe
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\priconfig.xml
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\priconfig.xml.intermediate
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\layout.resfiles
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\layout.resfiles.intermediate
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\resources.resfiles
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\resources.resfiles.intermediate
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\pri.resfiles
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\pri.resfiles.intermediate
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\qualifiers.txt
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\qualifiers.txt.intermediate
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\medai\documents\visual studio 2015\Projects\EggMe\EggMe\bld\x86\Debug\ProjectArchitectures.txt

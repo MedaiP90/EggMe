@@ -57,9 +57,15 @@
             contatore = 0;
         }
         var percentage = contatore / 10000;
+        function roundTo(decimalpositions) {
+            var i = this * Math.pow(10, decimalpositions);
+            i = Math.round(i);
+            return i / Math.pow(10, decimalpositions);
+        }
+        Number.prototype.roundTo = roundTo;
         document.getElementById("nameProfile").innerText = roamingSettings.values["namePlayer"];
         document.getElementById("cScore").innerText = contatore;
-        document.getElementById("pScore").innerText = percentage;
+        document.getElementById("pScore").innerText = percentage.roundTo(2);
         document.getElementById("medalsNo").innerText = verifyMedals();
         currentRank();
         document.getElementById("rank").innerText = cr;
